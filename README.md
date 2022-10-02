@@ -1,4 +1,4 @@
-### Flock
+# Flock
 ## Elevate your lifestyle
 Flock is an app where the user tracks meals throughout the day by taking pictures. The AI model evaluates calories and micronutrients, allowing users to journal and elevate their lifestyle. Users can receive meal recommendations, and integrate their account with our industry partners in meal prep delivery. 
 

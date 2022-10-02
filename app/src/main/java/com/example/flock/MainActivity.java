@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -17,6 +18,8 @@ import java.sql.SQLException;
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
     BottomNavigationView bottomNavigationView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
     }
     Journal journal = new Journal();
-    Record record = new Record();
+//    Record record = new Record();
     Search search = new Search();
 
     @Override
@@ -61,7 +64,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
 
             case R.id.record:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, record).commit();
+                Intent recordSwitch = new Intent(MainActivity.this, Record.class);
+                startActivity(recordSwitch);
                 return true;
         }
         return false;

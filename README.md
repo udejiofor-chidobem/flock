@@ -12,7 +12,7 @@ With our backend ML model, after scanning the respective food with your camera, 
 
 ## How can I train the model?
 1. Download the food 101 dataset at https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/.
-2. Unzip the folder into the image_classifier folder.
+2. Unzip the file into the image_classifier folder.
 3. In data.py, replace food_list with desired foods to train the model on.
 4. Run `python data.py` to prepare the data.
 5. Run `python train.py` to train the model.

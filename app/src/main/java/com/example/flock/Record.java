@@ -142,5 +142,6 @@ public class Record extends AppCompatActivity {
             mImageView.setImageURI(image_uri);
 
         }
+        finish();
     }
 }

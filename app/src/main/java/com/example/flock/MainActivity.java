@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
 
             case R.id.record:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, journal).commit();
+                bottomNavigationView.getMenu().getItem(2).setChecked(true);
                 Intent recordSwitch = new Intent(MainActivity.this, Record.class);
                 startActivity(recordSwitch);
                 return true;

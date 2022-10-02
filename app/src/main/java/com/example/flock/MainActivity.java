@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.flock;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        bottomNavigationView.setSelectedItemId(R.id.person);
+        bottomNavigationView.setSelectedItemId(R.id.journal);
 
     }
     Journal journal = new Journal();
@@ -31,16 +31,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.person:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, firstFragment).commit();
+            case R.id.search:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, search).commit();
                 return true;
 
-            case R.id.home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, secondFragment).commit();
+            case R.id.journal:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, journal).commit();
                 return true;
 
-            case R.id.settings:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, thirdFragment).commit();
+            case R.id.record:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, record).commit();
                 return true;
         }
         return false;

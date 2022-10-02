@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.flock;
 
 import android.os.Bundle;
 

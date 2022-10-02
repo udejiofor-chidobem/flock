@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/floc">
     <item
         android:id="@+id/search"
         android:title="Search"
-        android:icon="@color/teal_200"/>
+        android:icon="@drawable/ic_baseline_search_24"/>
     <item
         android:id="@+id/record"
         android:title="Record"
-        android:icon="@color/teal_200"/>
+        android:icon="@drawable/ic_baseline_camera_24"/>
     <item
         android:id="@+id/journal"
         android:title="Journal"
-        android:icon="@color/teal_200"/>
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"/>
 
 </menu>

@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="floc">#3D84FB</color>
+    <color name="calories">#b30000</color>
+    <color name="micros">#009933</color>
+    <color name="water">#0066ff</color>
 </resources>
